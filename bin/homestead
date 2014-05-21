@@ -22,8 +22,10 @@ if ((!$loader = includeIfExists(__DIR__.'/../vendor/autoload.php')) && (!$loader
 }
 
 use Homestead\Commands\InstallCommand;
+use Homestead\Commands\UpdateCommand;
 use Symfony\Component\Console\Application;
 
 $app = new Application();
 $app->add(new InstallCommand);
+$app->add(new UpdateCommand);
 $app->run();

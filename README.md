@@ -4,11 +4,9 @@ A command line tool for managing your homestead environment and projects.
 
 ### Commands
 * `homestead install` - Installs Homestead from git to ~/.homestead.
+* `homestead update` - Updates Homestead installation
 
 ### Roadmap
-
-* `homestead update` - Updates local Homestead installation from git
-
 * `homestead status` - Returns Homestead VM status (Alias for vagrant status)
 * `homestead reload` - Reloads Homestead VM (Alias for vagrant reload)
 * `homestead ssh` - SSH into Homestead VM (Alias for vagrant ssh)

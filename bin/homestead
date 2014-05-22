@@ -22,6 +22,7 @@ if ((!$loader = includeIfExists(__DIR__.'/../vendor/autoload.php')) && (!$loader
 }
 
 use Homestead\Commands\FoldersCommand;
+use Homestead\Commands\FoldersAddCommand;
 use Homestead\Commands\InstallCommand;
 use Homestead\Commands\KeysCommand;
 use Homestead\Commands\SitesCommand;
@@ -30,6 +31,7 @@ use Symfony\Component\Console\Application;
 
 $app = new Application();
 $app->add(new FoldersCommand);
+$app->add(new FoldersAddCommand);
 $app->add(new InstallCommand);
 $app->add(new KeysCommand);
 $app->add(new SitesCommand);

@@ -7,6 +7,7 @@ A command line tool for managing your homestead environment and projects.
 * `homestead update` - Updates Homestead installation
 * `homestead sites` - Lists sites
 * `homestead folders` - Lists shared folders
+* `homestead folders:add` - Adds new folder to share within Homestead environment
 * `homestead keys` - Lists keys
 
 ### Roadmap
@@ -18,8 +19,6 @@ A command line tool for managing your homestead environment and projects.
 * `homestead keys add` - Adds private key
 * `homestead keys rm` - Removes private key
 
-
-* `homestead folders add` - Adds new folder to share within Homestead environment
 * `homestead folders rm` - Removes folder from within Homestead environment
 
 * `homestead sites add` - Adds site and associates it to the current directory or directory specified via paramaters

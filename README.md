@@ -7,6 +7,7 @@ A command line tool for managing your homestead environment and projects.
 * `homestead update` - Updates Homestead installation
 * `homestead sites` - Lists sites
 * `homestead folders` - Lists shared folders
+* `homestead keys` - Lists keys
 
 ### Roadmap
 * `homestead status` - Returns Homestead VM status (Alias for vagrant status)
@@ -14,7 +15,6 @@ A command line tool for managing your homestead environment and projects.
 * `homestead ssh` - SSH into Homestead VM (Alias for vagrant ssh)
 
 * `homestead auth` - Prints authorization key path
-* `homestead keys` - Lists keys
 * `homestead keys add` - Adds private key
 * `homestead keys rm` - Removes private key
 

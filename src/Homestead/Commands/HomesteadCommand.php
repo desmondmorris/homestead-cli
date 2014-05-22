@@ -7,6 +7,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Yaml\Yaml;
 
 class HomesteadCommand extends Command
 {
@@ -14,6 +15,16 @@ class HomesteadCommand extends Command
 
     protected static function getInstallPath() {
         return $_SERVER['HOME'] . DIRECTORY_SEPARATOR . self::$install_dir;
+    }
+
+    protected static function loadConfig() {
+      $yaml = self::getInstallPath() . '/Homestead.yaml';
+
+      if (!file_exists($yaml)) {
+        return false;
+      }
+      $config = Yaml::parse($yaml);
+      return $config;
     }
 
     protected static function has_git()

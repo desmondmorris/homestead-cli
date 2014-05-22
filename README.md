@@ -6,6 +6,7 @@ A command line tool for managing your homestead environment and projects.
 * `homestead install` - Installs Homestead from git to ~/.homestead.
 * `homestead update` - Updates Homestead installation
 * `homestead sites` - Lists sites
+* `homestead folders` - Lists shared folders
 
 ### Roadmap
 * `homestead status` - Returns Homestead VM status (Alias for vagrant status)
@@ -17,7 +18,7 @@ A command line tool for managing your homestead environment and projects.
 * `homestead keys add` - Adds private key
 * `homestead keys rm` - Removes private key
 
-* `homestead folders` - Lists shared folders
+
 * `homestead folders add` - Adds new folder to share within Homestead environment
 * `homestead folders rm` - Removes folder from within Homestead environment
 

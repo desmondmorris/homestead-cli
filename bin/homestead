@@ -21,12 +21,14 @@ if ((!$loader = includeIfExists(__DIR__.'/../vendor/autoload.php')) && (!$loader
     exit(1);
 }
 
+use Homestead\Commands\FoldersCommand;
 use Homestead\Commands\InstallCommand;
 use Homestead\Commands\SitesCommand;
 use Homestead\Commands\UpdateCommand;
 use Symfony\Component\Console\Application;
 
 $app = new Application();
+$app->add(new FoldersCommand);
 $app->add(new InstallCommand);
 $app->add(new SitesCommand);
 $app->add(new UpdateCommand);

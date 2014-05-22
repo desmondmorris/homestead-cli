@@ -14,10 +14,6 @@ A command line tool for managing your homestead environment and projects.
 
 
 ### Roadmap
-* `homestead status` - Returns Homestead VM status (Alias for vagrant status)
-* `homestead reload` - Reloads Homestead VM (Alias for vagrant reload)
-* `homestead ssh` - SSH into Homestead VM (Alias for vagrant ssh)
-
 * `homestead auth` - Prints authorization key path
 * `homestead keys rm` - Removes private key
 * `homestead folders rm` - Removes folder from within Homestead environment
